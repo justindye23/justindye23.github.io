@@ -25,7 +25,7 @@ header {
 }
 
 main {
-    min-height: 5;
+    min-height: 100px;
 }
 
 main img {
