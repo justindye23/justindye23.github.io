@@ -13,7 +13,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 
 header {}
 header h1 {}
-header img {}
+header img { width: 62.666%; float:left;}
 header .subheading {}
 
 nav {}
@@ -35,8 +35,8 @@ section.forecast {
 }
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: ???; /* fill the page in the small/phone view */
-    margin: ???;
+    width: 25%; /* fill the page in the small/phone view */
+    margin: 0 0 .2rem 2%;
 }
 
 footer {}
