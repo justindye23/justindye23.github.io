@@ -5,8 +5,9 @@
 body {
     font-size: 16px;
     /* Declare the base font-family - from google font api or other */
+    font-family: 'Open Sans', sans-serif;
 }
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
@@ -17,14 +18,21 @@ header h1 {}
 header img {}
 header .subheading {}
 
-nav {}
+nav {background-color: #ccc;
+
+}
 nav button {}
-nav ul {}
 nav ul li {}
-nav ul li a {}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+
+}
 nav ul li.active a {}
 nav ul li a:hover {}
-
+nav ul.hide {display: none;}
 main {}
 main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
