@@ -33,6 +33,12 @@ nav ul li a {
 nav ul li.active a {}
 nav ul li a:hover {}
 nav ul.hide {display: none;}
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
 main {}
 main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
