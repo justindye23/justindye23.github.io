@@ -10,7 +10,7 @@
         display: block;
     }
     nav ul li{
-        float: left;
+        display: inline-flex;
     }
 
     nav ul li a{
@@ -28,7 +28,7 @@
     /* show the 10-day forecast with the medium view and up */
     article p.town-article img {
         width: 62.666%;
-        float: left;
+        display: flex;
     }
     /* responsive images */
 }
