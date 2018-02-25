@@ -11,11 +11,10 @@ console.log(f);
 
 function getWindChillFactor(t,s)
 {
-    return 110;
 
-    //f = 35.74 + 0.6215 t - 35.75 s0.16 + 0.4275 t s0.16
-    //return f;
+    var f = 35.74 + 0.6215 * t - 35.75 s * Math.pow(Math.pow, .16) + 0.4275 t  s * Math.pow(Math.pow, .16)
+    return f;
 
 }
 
-//f = 35.74 + 0.6215 t - 35.75 s0.16 + 0.4275 t s0.16
+
