@@ -22,9 +22,10 @@
         grid-template-rows: 1fr 1fr;
         grid-gap: 20px;
     }
-    img:hover {
-        width: 70%;
+ 
+    div:hover {
         box-shadow: 5px 5px 10px gray;
     }
+
 
 }

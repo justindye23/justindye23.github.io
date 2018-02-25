@@ -11,10 +11,12 @@ nav ul li.active a {}
 nav ul li a:hover {}
 nav ul.hide {display: none;}
 
-img:hover {
-    width: 50%;
+
+
+div:hover {
     box-shadow: 5px 5px 10px gray;
 }
+
 
 
 .grid{
