@@ -1,0 +1,17 @@
+th,
+td {
+    border: 1px solid black;
+}
+
+thead tr th:nth-child(1) th {
+    background-color: aqua
+}
+
+#tableTitle {
+    background-color: #7fb9c2;
+
+}
+
+tbody tr:nth-child(even) td {
+    background-color: darkgray;
+}
