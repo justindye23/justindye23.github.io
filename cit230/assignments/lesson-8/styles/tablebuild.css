@@ -9,16 +9,20 @@ table{
     text-align: center;
 }
 
+table:hover{
+    box-shadow: 5px 5px 10px #628ca6;
+}
 
-tbody{
-    background-color:  #e7f0ed;
+
+tbody {
+    background-color: #e7f0ed;
 }
 
 tbody tr:nth-child(even) td {
     background-color: #e7ffed;
 }
 
-tfoot{
+tfoot {
     background-color: #7fb9c2;
 }
 
@@ -27,11 +31,12 @@ tfoot{
     font-weight: bold;
 }
 
-#subHeadings, #special{
+#subHeadings,
+#special {
     background-color: #628ca6;
     color: white;
 }
 
-#italics{
+#italics {
     font-style: italic;
 }
