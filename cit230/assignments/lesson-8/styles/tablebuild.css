@@ -3,15 +3,35 @@ td {
     border: 1px solid black;
 }
 
-thead tr th:nth-child(1) th {
-    background-color: aqua
+table{
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+
+tbody{
+    background-color:  #e7f0ed;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #e7ffed;
+}
+
+tfoot{
+    background-color: #7fb9c2;
 }
 
 #tableTitle {
     background-color: #7fb9c2;
-
+    font-weight: bold;
 }
 
-tbody tr:nth-child(even) td {
-    background-color: darkgray;
+#subHeadings, #special{
+    background-color: #628ca6;
+    color: white;
+}
+
+#italics{
+    font-style: italic;
 }
