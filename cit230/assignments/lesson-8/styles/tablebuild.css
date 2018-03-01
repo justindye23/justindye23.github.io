@@ -1,21 +1,24 @@
 th,
 td {
     border: 1px solid black;
+    padding: 5px 5px 5px 5px;
 }
 
-table{
+table {
     font-family: 'Ubuntu', sans-serif;
     color: black;
+    font-size: 16px;
     text-align: center;
 }
 
-table:hover{
+table:hover {
     box-shadow: 5px 5px 10px #628ca6;
 }
 
 
 tbody {
     background-color: #e7f0ed;
+    font-size: 14px;
 }
 
 tbody tr:nth-child(even) td {
@@ -24,6 +27,7 @@ tbody tr:nth-child(even) td {
 
 tfoot {
     background-color: #7fb9c2;
+    font-size: 12px;
 }
 
 #tableTitle {
@@ -31,11 +35,17 @@ tfoot {
     font-weight: bold;
 }
 
-#subHeadings,
-#special {
+thead tr:nth-child(2) th {
     background-color: #628ca6;
     color: white;
 }
+
+#special {
+    background-color: #628ca6;
+    color: white;
+
+}
+
 
 #italics {
     font-style: italic;
