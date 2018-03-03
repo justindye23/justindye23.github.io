@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
 
-    <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Franklin Website</title>
@@ -16,6 +16,7 @@
     <link href="styles/medium.css" rel="stylesheet">
     <!-- medium/tablet views -->
     <link href="styles/large.css" rel="stylesheet">
+    <link href="styles/stormcenter.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <!-- large/wide/desktop views -->
 </head>
@@ -24,7 +25,7 @@
 
     <header>
         <img src="images/logo1.jpeg" alt="The site logo" width="200">
-        <h1>Franklin City Page</h1>
+        <h1>Storm Center</h1>
         <div class="subheading">Watching out for your weather needs</div>
     </header>
 
@@ -43,13 +44,74 @@
 
     <main>
         <form action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="">Full Name:</label>
+                    <input type="text" name="fullname" title="Use only letters" autofocus required pattern="[A-Za-z\s]+[A-Za-z]" placeholder="Your full name">
+                </div>
+                <div> <label for="">Email:</label>
+                    <input type="email" required placeholder="example@gmail.com"></div>
+                <div>
+                    <label for="">Phone Number:</label>
+                    <input type="number" required placeholder="Current phone number">
+                </div>
+                <div>
+                    <label for="zipCode">Zip Code:</label>
+                    <input type="number" name="zipCode" id="zipCode" required pattern="[0-9\-]{5,}" placeholder="5-digit zip">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <div>
+                    <label for="">Storm Date:</label>
+                    <input type="date">
+                </div>
+                <div>
+                    <label for="">Storm Type</label>
+                    <input list="type">
+                <datalist id="type">
+                   <option value="Flash Flood"></option>
+                   <option value="Hail"></option>
+                   <option value="Hurrricane"></option>
+                   <option value="Tornado"></option>
+
+
+                </datalist>
+
+                </div>
+                <div>
+                    <label for="rating">Storm Severity(1 to 10)</label>
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span><br>
+                </div>
+                <div>
+                    <label for="">Storm Region</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">User in Danger Level-</label>
+                    <label for="">Yes</label>
+                    <input type="radio" name="danger" id="Yes">
+                    <label for="">Maybe</label>
+                    <input type="radio" name="danger" id="Maybe">
+                    <label for="">No</label>
+                    <input type="radio" name="danger" id="No">
+
+                </div>
+            </fieldset>
+            <fieldset>
+                <div id="label">
+                    <label for="">Additonal Information or Comments: </label>
+                    <textarea name="additionalInformation" id="additonalInformation" style="height: 150px" width="200px"></textarea>
+                </div>
+            </fieldset>
+
             <div>
-                <label for="">Full Name:</label>
-                <input type="text" name="fullname" required>
+                <input type="submit">
             </div>
-            <div>
-            <input type="submit">
-            </div>
+
+
 
         </form>
     </main>
@@ -61,11 +123,11 @@
         <p class="footer-bar">&copy;2018 All Rights Reserved | Wacky Weather Watch | <span id="currentdate">  </span></p>
     </footer>
 
-    <script src="scripts/windchill.js"></script>
+
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/stormsscale.js"></script>
     <script src="scripts/currentdate.js"></script>
 
 </body>
 
 </html>
-
