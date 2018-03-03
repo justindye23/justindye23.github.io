@@ -10,7 +10,7 @@
         display: block;
     }
     nav ul li{
-        display: inline-flex;
+        display: inline-grid;
     }
 
     nav ul li a{
