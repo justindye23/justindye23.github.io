@@ -18,7 +18,7 @@ header h1 {}
 header img {}
 header .subheading {}
 
-nav {background-color: #ccc;
+nav {background-color:#59A5D8;
 
 }
 nav button {}
@@ -27,7 +27,7 @@ nav ul li a {
     display: block;
     padding: .8rem 2%;
     text-decoration: none;
-    color: #000;
+    color:#000;
 
 }
 nav ul li.active a {}
@@ -54,7 +54,10 @@ article p.town-article img {  /* This structure refers to img elements that are 
     margin: 0 0 .2rem 2%;
 }
 
-footer {}
+footer {
+    background-color: #700C3A;
+    color: white;
+}
 footer aside {}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
