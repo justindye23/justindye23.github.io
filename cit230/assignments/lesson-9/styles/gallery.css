@@ -1,0 +1,30 @@
+{box-sizing:border-box;}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+
+}
+nav ul li.active a {}
+nav ul li a:hover {}
+nav ul.hide {display: none;}
+
+
+
+div:hover {
+    box-shadow: 5px 5px 10px gray;
+}
+
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+
+
+}
+
