@@ -7,11 +7,22 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 
-request.onload = function() {
+request.onload = function () {
     var towns = request.response;
 
 
-//var towns = {};
-var townName = towns[0].name;
-document.getElementById("franklinData").innerHTML=townName;
+    var townName = towns[0].name;
+    document.getElementById("townName").innerHTML = "townName";
+
+    var moto = towns[0].moto
+    document.getElementById("franklinData").innerHTML = "moto";
+
+    var yearFounded = towns[0].yearFounded
+    document.getElementById("franklinData").innerHTML = yearFounded;
+
+    var currentPopulation = towns[0].currentPopulation
+    document.getElementById("franklinData").innerHTML = currentPopulation;
+
+    var averageRainfall = towns[0].averageRainfall
+    document.getElementById("franklinData").innerHTML = averageRainfall;
 }
