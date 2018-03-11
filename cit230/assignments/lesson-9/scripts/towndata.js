@@ -12,7 +12,7 @@ request.onload = function () {
 
 
     var townName = towns[0].name;
-    document.getElementById("townName").innerHTML = "townName";
+    document.getElementById("franklinData").innerHTML = "townName";
 
     var moto = towns[0].moto
     document.getElementById("franklinData").innerHTML = "moto";
@@ -27,7 +27,7 @@ request.onload = function () {
     document.getElementById("franklinData").innerHTML = averageRainfall;
 
     var townName = towns[1].name;
-    document.getElementById("townName").innerHTML = "townName";
+    document.getElementById("greenvilleData").innerHTML = "townName";
 
     var moto = towns[1].moto
     document.getElementById("greenvilleData").innerHTML = "moto";
