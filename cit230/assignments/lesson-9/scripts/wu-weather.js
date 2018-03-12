@@ -1,4 +1,6 @@
-var requestURL = 'http://api.wunderground.com/api/1214f7b6c790d58f/geolookup/conditions/q/MN/Franklin.json';
+var requestURL = 'https://api.wunderground.com/api/1214f7b6c790d58f/geolookup/conditions/q/MN/Franklin.json';
+
+var requestURL = 'https://api.wunderground.com/api/1214f7b6c790d58f/forecast/conditions/q/MN/Franklin.json';
 
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -15,3 +17,6 @@ franklin response.version.termsofservice
 var weather = franklin.currentobservation.temperature_string;
 
 document.getElementById("weather").innerHTML = weather;
+
+document.getElementById("temperature").innerHTML = temperature;
+

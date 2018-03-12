@@ -10,49 +10,53 @@ request.send();
 request.onload = function () {
     var towns = request.response;
 
+console.log(towns);
 
-    var townName = towns[0].name;
-    document.getElementById("franklinData").innerHTML = "townName";
+    var franklin = towns[0];
+    console.log(franklin);
+
+    var townName = franklin.name;
+    document.getElementById("franklinData").innerHTML += "townName";
 
     var moto = towns[0].moto
-    document.getElementById("franklinData").innerHTML = "moto";
+    document.getElementById("franklinData").innerHTML += "moto";
 
     var yearFounded = towns[0].yearFounded
-    document.getElementById("franklinData").innerHTML = "yearFounded";
+    document.getElementById("franklinData").innerHTML += "yearFounded";
 
     var currentPopulation = towns[0].currentPopulation
-    document.getElementById("franklinData").innerHTML = currentPopulation;
+    document.getElementById("franklinData").innerHTML += "currentPopulation";
 
     var averageRainfall = towns[0].averageRainfall
-    document.getElementById("franklinData").innerHTML = averageRainfall;
+    document.getElementById("franklinData").innerHTML += "averageRainfall";
 
     var townName = towns[1].name;
-    document.getElementById("greenvilleData").innerHTML = "townName";
+    document.getElementById("greenvilleData").innerHTML += "townName";
 
     var moto = towns[1].moto
-    document.getElementById("greenvilleData").innerHTML = "moto";
+    document.getElementById("greenvilleData").innerHTML += "moto";
 
     var yearFounded = towns[1].yearFounded
-    document.getElementById("greenvilleData").innerHTML = "yearFounded";
+    document.getElementById("greenvilleData").innerHTML += "yearFounded";
 
     var currentPopulation = towns[1].currentPopulation
-    document.getElementById("greenvilleData").innerHTML = "currentPopulation";
+    document.getElementById("greenvilleData").innerHTML += "currentPopulation";
 
     var averageRainfall = towns[1].averageRainfall
-    document.getElementById("greenvilleData").innerHTML = "averageRainfall";
+    document.getElementById("greenvilleData").innerHTML += "averageRainfall";
 
     var townName = towns[3].name;
-    document.getElementById("springfieldData").innerHTML = "townName";
+    document.getElementById("springfieldData").innerHTML += "townName";
 
     var moto = towns[3].moto
-    document.getElementById("springfieldData").innerHTML = "moto";
+    document.getElementById("springfieldData").innerHTML += "moto";
 
     var yearFounded = towns[3].yearFounded
-    document.getElementById("springfieldData").innerHTML = "yearFounded";
+    document.getElementById("springfieldData").innerHTML += "yearFounded";
 
     var currentPopulation = towns[3].currentPopulation
-    document.getElementById("springfieldData").innerHTML = "currentPopulation";
+    document.getElementById("springfieldData").innerHTML += "currentPopulation";
 
     var averageRainfall = towns[3].averageRainfall
-    document.getElementById("springfieldData").innerHTML = "averageRainfall";
+    document.getElementById("springfieldData").innerHTML += "averageRainfall";
 }
