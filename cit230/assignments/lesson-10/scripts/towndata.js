@@ -15,7 +15,7 @@ request.onload = function () {
     document.getElementById("franklinData").innerHTML = "townName";
 
     var moto = towns[0].moto
-    document.getElementById("franklinData").innerHTML = "moto";
+    document.getElementById("frankMoto").innerHTML = "moto";
 
     var yearFounded = towns[0].yearFounded
     document.getElementById("franklinData").innerHTML = "yearFounded";

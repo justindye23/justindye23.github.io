@@ -29,7 +29,9 @@ div:hover {
 }
 
 article{
-    font: bold;
+    font-size: 14pt;
+    font-style: italic;
+    font-weight: bold;
 }
 
 
