@@ -10,40 +10,42 @@ request.send();
 request.onload = function () {
     var towns = request.response;
 
-console.log(towns);
 
-    var franklin = towns[0];
-    console.log(franklin);
+    var franklin = towns.towns[0];
+
 
     var townName = franklin.name;
-    document.getElementById("franklinData").innerHTML += "townName";
+    document.getElementById("frankName").innerHTML = townName;
 
-    var moto = towns[0].moto
-    document.getElementById("franklinData").innerHTML += "moto";
+    var motto = franklin.motto;
+    document.getElementById("frankMotto").innerHTML = motto;
 
-    var yearFounded = towns[0].yearFounded
-    document.getElementById("franklinData").innerHTML += "yearFounded";
+    var yearFounded = franklin.yearFounded
+    document.getElementById("frankYear").innerHTML = yearFounded;
 
-    var currentPopulation = towns[0].currentPopulation
-    document.getElementById("franklinData").innerHTML += "currentPopulation";
+    var currentPopulation = franklin.currentPopulation
+    document.getElementById("frankPopulation").innerHTML = currentPopulation;
 
-    var averageRainfall = towns[0].averageRainfall
-    document.getElementById("franklinData").innerHTML += "averageRainfall";
+    var averageRainfall = franklin.averageRainfall
+    document.getElementById("frankRain").innerHTML = averageRainfall;
 
-    var townName = towns[1].name;
-    document.getElementById("greenvilleData").innerHTML += "townName";
 
-    var moto = towns[1].moto
-    document.getElementById("greenvilleData").innerHTML += "moto";
+    var greenville = towns.towns[1];
 
-    var yearFounded = towns[1].yearFounded
-    document.getElementById("greenvilleData").innerHTML += "yearFounded";
+    var townName = greenville.name;
+    document.getElementById("greenName").innerHTML = townName;
 
-    var currentPopulation = towns[1].currentPopulation
-    document.getElementById("greenvilleData").innerHTML += "currentPopulation";
+    var motto = greenville.motto;
+    document.getElementById("greenMotto").innerHTML = motto;
 
-    var averageRainfall = towns[1].averageRainfall
-    document.getElementById("greenvilleData").innerHTML += "averageRainfall";
+    var yearFounded = greenville.yearFounded
+    document.getElementById("greenYear").innerHTML = yearFounded;
+
+    var currentPopulation = greenville.currentPopulation
+    document.getElementById("greenPopulation").innerHTML = currentPopulation;
+
+    var averageRainfall = greenville.averageRainfall
+    document.getElementById("greenRain").innerHTML = averageRainfall;
 
     var townName = towns[3].name;
     document.getElementById("springfieldData").innerHTML += "townName";
