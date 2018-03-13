@@ -47,18 +47,20 @@ request.onload = function () {
     var averageRainfall = greenville.averageRainfall
     document.getElementById("greenRain").innerHTML = averageRainfall;
 
-    var townName = towns[3].name;
-    document.getElementById("springfieldData").innerHTML += "townName";
+    var springfield = towns.towns[3];
 
-    var moto = towns[3].moto
-    document.getElementById("springfieldData").innerHTML += "moto";
+    var townName = springfield.name;
+    document.getElementById("springName").innerHTML = townName;
 
-    var yearFounded = towns[3].yearFounded
-    document.getElementById("springfieldData").innerHTML += "yearFounded";
+    var motto = springfield.motto
+    document.getElementById("springMotto").innerHTML = motto;
 
-    var currentPopulation = towns[3].currentPopulation
-    document.getElementById("springfieldData").innerHTML += "currentPopulation";
+    var yearFounded = springfield.yearFounded
+    document.getElementById("springYear").innerHTML = yearFounded;
 
-    var averageRainfall = towns[3].averageRainfall
-    document.getElementById("springfieldData").innerHTML += "averageRainfall";
+    var currentPopulation = springfield.currentPopulation
+    document.getElementById("springPopulation").innerHTML = currentPopulation;
+
+    var averageRainfall = springfield.averageRainfall
+    document.getElementById("springRain").innerHTML = averageRainfall;
 }
