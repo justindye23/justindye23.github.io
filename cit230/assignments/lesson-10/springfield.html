@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Springfield Website</title>
+        <title>Franklin Website</title>
         <meta name="author" content="Your Name Here">
         <meta name="description" content="page description placeholder">
         <!-- external style references in the proper cascading order -->
@@ -42,7 +42,7 @@
         </nav>
 
         <main>
-            <h2>The City of Springfield</h2>
+            <h2>The City of Springfiled</h2>
             <figure>
                 <img srcset="images/franklin-small.jpg 400w,
                              images/franklin-medium.jpg 800w,
@@ -50,23 +50,15 @@
             </figure>
             <section>
                 <h3>Weather Summary</h3>
-                <div class="highlow">
-                    <p>High:</p>
-                    <p>Low:</p>
-                </div>
-                <div class="current">
-                    Sunny
-                    <picture>
-                        <img src="images/sunny.jpeg" alt="" width="200">
-                    </picture>
-                </div>
+
                 <div class="conditions">
-                    <p>Temperature: <span id="temp"></span></p>
+                    <p>Current Weather: <span id=frankWeather></span></p>
+                    <p>Current Temperature: <span id="frankTemp"></span></p>
 
-                    <p>Precipitation:</p>
-                    <p>Wind Speed: <span id="windSpeed"></span></p>
+                    <p>Wind Speed: <span id="frankWind"></span></p>
 
-                    <p>Wind Chill Factor: <span id="windChillFactor"> </span></p>
+                    <p>Current Conditions: <span id="frankIcon"> </span></p>
+                    <p>Forecast: <span id="frankForecast"></span> </p>
 
                 </div>
             </section>
@@ -106,7 +98,7 @@
             </section>
 
             <article>
-                <h3>Franklin Breaks Record</h3>
+                <h3>Springfield Breaks Record</h3>
                 <p class="town-article">
                     <img src="images/cloudy.jpeg" alt="short article placeholder" width="200"> The amazing Brother Tim Thayne is coming to visit this week!
                 </p>
@@ -121,7 +113,7 @@
             <p class="footer-bar">&copy;2018 All Rights Reserved | Wacky Weather Watch | <span id="currentdate">  </span></p>
         </footer>
 
-        <script src="scripts/windchill.js"></script>
+        <script src="scripts/wu-weather.js"></script>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>
 
