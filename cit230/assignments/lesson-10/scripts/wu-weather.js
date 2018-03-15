@@ -8,7 +8,6 @@ request.send();
 request.onload = function () {
     var franklinWeather = request.response;
 
-    //franklin response.version.termsofservice
     document.getElementById("frankWeather").innerHTML = franklinWeather.current_observation.weather;
 
     document.getElementById("frankTemp").innerHTML = franklinWeather.current_observation.temperature_string;
