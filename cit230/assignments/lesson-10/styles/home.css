@@ -14,10 +14,27 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 }
 
 header {}
-header h1 {}
-header img {}
-header .subheading {}
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+header img {}
+
+header .subheading {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 14pt;
+    font-weight: bold;
+    color: #700C3A;
+}
+
+#siteTitle {
+    color: #59A5D8;
+    font-weight: bold;
+}
 nav {background-color:#59A5D8;
 
 }

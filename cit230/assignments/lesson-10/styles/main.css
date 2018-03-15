@@ -1,6 +1,10 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
 
 body {
     font-size: 16px;
@@ -9,50 +13,94 @@ body {
 }
 
 
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+header,
+nav,
+main,
+footer {
+    /* the comma means apply the following CSS declarations to all of the listed elements */
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
 header {}
-header h1 {}
-header img {}
-header .subheading {}
 
-nav {background-color:#59A5D8;
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {}
+
+header .subheading {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 14pt;
+    font-weight: bold;
+    color: #700C3A;
+}
+
+#siteTitle {
+    color: #59A5D8;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #59A5D8;
 
 }
+
 nav button {}
+
 nav ul li {}
+
 nav ul li a {
     display: block;
     padding: .8rem 2%;
     text-decoration: none;
-    color:#000;
+    color: #000;
 
 }
+
 nav ul li.active a {
-    color:black;
+    color: black;
 }
-nav ul li a:hover {}
-nav ul.hide {display: none;}
 
-.clearfix:after{
+nav ul li a:hover {}
+
+nav ul.hide {
+    display: none;
+}
+
+.clearfix:after {
     content: "";
     display: table;
     clear: both;
 }
+
 main {}
+
 main h2 {}
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { width: 100%; }
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+main figure img {
+    width: 100%;
+}
 
 section {}
+
 section.forecast {
     display: none;
 }
 
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 100%; /* fill the page in the small/phone view */
+article p.town-article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 100%;
+    /* fill the page in the small/phone view */
     margin: 0 0 .2rem 2%;
 }
 
@@ -60,7 +108,11 @@ footer {
     background-color: #700C3A;
     color: white;
 }
+
 footer aside {}
-footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+footer > p {}
+
+/* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
