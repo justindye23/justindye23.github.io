@@ -16,28 +16,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 header {}
 header h1 {}
 header img {}
-
 header .subheading {}
-{box-sizing:border-box;}
-
-
-}
-
-
-div:hover {
-    box-shadow: 5px 5px 10px gray;
-}
-
-
-
-.grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 20px;
-
-
-}
 
 nav {background-color:#59A5D8;
 
@@ -51,7 +30,9 @@ nav ul li a {
     color:#000;
 
 }
-nav ul li.active a {}
+nav ul li.active a {
+    color:black;
+}
 nav ul li a:hover {}
 nav ul.hide {display: none;}
 

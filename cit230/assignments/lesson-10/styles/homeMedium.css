@@ -8,7 +8,7 @@
         display: block;
     }
     nav ul li {
-        float: left;
+        display: inline-grid;
     }
 
     nav ul li a {

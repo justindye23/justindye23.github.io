@@ -29,7 +29,7 @@
         </header>
 
         <!-- site navigation use placeholder references -->
-        <nav class="clearfix">
+        <nav id="mainmenu" class="clearfix">
             <button onclick="toggleMenu()">&#9776;</button>
             <ul id="primaryNav" class="hide">
                 <li><a href="index.html">Home</a></li>
@@ -57,7 +57,7 @@
 
                     <p>Wind Speed: <span id="frankWind"></span></p>
 
-                    <p>Current Conditions: <span id="frankIcon"> </span></p>
+                    <p>Current Conditions: <img id="frankIcon" src="id=frankIcon" alt=""> </p>
                     <p>Forecast: <span id="frankForecast"></span> </p>
 
                 </div>
@@ -113,7 +113,9 @@
             <p class="footer-bar">&copy;2018 All Rights Reserved | Wacky Weather Watch | <span id="currentdate">  </span></p>
         </footer>
 
+
         <script src="scripts/wu-weather.js"></script>
+        <script src="scripts/wayFinding.js"></script>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>
 

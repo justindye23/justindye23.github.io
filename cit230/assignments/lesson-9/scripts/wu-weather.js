@@ -13,7 +13,7 @@ request.onload = function () {
 
     document.getElementById("frankTemp").innerHTML = franklinWeather.current_observation.temperature_string;
     document.getElementById("frankWind").innerHTML = franklinWeather.current_observation.wind_mph;
-    document.getElementById("frankIcon").innerHTML = franklinWeather.current_observation.icon;
+    document.getElementById("frankIcon").innerHTML = franklinWeather.current_observation.icon_url;
 }
 
 
