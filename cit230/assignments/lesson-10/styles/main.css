@@ -47,12 +47,16 @@ header .subheading {
 
 nav {
     background-color: #59A5D8;
+    display: flex;
+    justify-content: center;
 
 }
 
 nav button {}
 
-nav ul li {}
+nav ul li {
+    min-width: 100px;
+}
 
 nav ul li a {
     display: block;

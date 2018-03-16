@@ -10,7 +10,6 @@ request.onload = function () {
 
     //franklin response.version.termsofservice
     document.getElementById("greenWeather").innerHTML = greenvilleWeather.current_observation.weather;
-
     document.getElementById("greenTemp").innerHTML = greenvilleWeather.current_observation.temperature_string;
     document.getElementById("greenWind").innerHTML = greenvilleWeather.current_observation.wind_mph;
     document.getElementById("greenIcon").innerHTML = greenvilleWeather.current_observation.icon_url;
