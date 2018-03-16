@@ -7,7 +7,9 @@ nav ul li a {
     color: #000;
 
 }
-nav ul li.active a {}
+nav ul li.active a {
+    background: #700C3A;
+}
 nav ul li a:hover {}
 nav ul.hide {display: none;}
 
