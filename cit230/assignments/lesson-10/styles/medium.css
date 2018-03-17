@@ -2,6 +2,11 @@
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
 
 
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-content: stretch;
+    }
     nav button {
         display: none;
     }
