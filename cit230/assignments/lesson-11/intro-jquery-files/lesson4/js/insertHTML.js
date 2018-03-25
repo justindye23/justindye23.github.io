@@ -9,7 +9,7 @@
             box1.html('');
         }
     }
-    $('LeftToRight').click(LeftToRight );
+    $('#LeftToRight').click(LeftToRight );
 
     function RightToLeft(){
         if (box1.html() == ''){
@@ -19,7 +19,7 @@
         }
     }
 
-    $('RightToLeft').click(RightToLeft );
+    $('#RightToLeft').click(RightToLeft );
 
 
 })
