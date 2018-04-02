@@ -1,0 +1,13 @@
+div{
+    margin: 10px;
+}
+
+fieldset{
+    margin:10px;
+    border-color: lightblue;
+}
+
+#label
+{
+    display:flex;
+}

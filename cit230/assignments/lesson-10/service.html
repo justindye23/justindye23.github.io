@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Services</title>
+        <meta name="author" content="Your Name Here">
+        <meta name="description" content="page description placeholder">
+        <!-- external style references in the proper cascading order -->
+        <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet">
+        <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">
+        <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">
+        <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <!-- large/wide/desktop views -->
+    </head>
+
+    <body>
+
+        <header>
+            <img src="images/logo1.jpeg" alt="The site logo" width="200">
+            <p id="siteTitle">Wacky Weather Watch</p>
+            <h1>Services Page</h1>
+            <div class="subheading">Watching out for your weather needs</div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="mainmenu" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>The City of Springfiled</h2>
+            <figure>
+                <img srcset="images/franklin-small.jpg 400w,
+                             images/franklin-medium.jpg 800w,
+                             images/franklin-large.jpg 1200w">
+            </figure>
+            <section>
+                <h3>Weather Summary</h3>
+
+                <div class="conditions">
+                    <p>Current Weather: <span id="springWeather"></span></p>
+                    <p>Current Temperature: <span id="springTemp"></span></p>
+
+                    <p>Wind Speed: <span id="springWind"></span></p>
+
+                    <p>Current Conditions: <img id="springIcon" src="" alt=""></p>
+                    <p>Forecast: <span id="springForecast"></span> </p>
+
+                </div>
+            </section>
+
+            <section class="forecast">
+                <h3>10 Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <article>
+                <h3>Springfield Breaks Record</h3>
+                <p class="town-article">
+                    <img src="images/cloudy.jpeg" alt="short article placeholder" width="200"> The amazing Brother Tim Thayne is coming to visit this week!
+                </p>
+            </article>
+
+        </main>
+
+        <footer>
+            <aside>
+                Contact us at 1800.233.7678
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | Wacky Weather Watch | <span id="currentdate">  </span></p>
+        </footer>
+
+        <script src="scripts/wu-weatherS.js"></script>
+        <script src="scripts/wayFinding.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+
+    </body>
+
+</html>

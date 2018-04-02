@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <link href="styles/home.css" rel="stylesheet">
+    <link href="styles/homeMedium.css" rel="stylesheet">
+    <link href="styles/homeLarge.css" rel="stylesheet">
+
+
+</head>
+<header>
+    <img src="images/logo1.jpeg" alt="The site logo" width="200">
+    <p id="siteTitle">Wacky Weather Watch</p>
+    <h1>Wacky Weather Watch</h1>
+    <div class="subheading">Watching out for your weather neeeds
+    </div>
+</header>
+<nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="mainmenu" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="franklin.html">Franklin</a></li>
+        <li><a href="greenville.html">Greenville</a></li>
+        <li><a href="springfield.html">Springfield</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+</nav>
+<main>
+
+    <body>
+        <div class="grid">
+            <div> <img src="images/snow.jpeg">
+                <span>"Weather Story"</span>
+            </div>
+            <div> <img src="images/foggy.jpeg">
+                <article>Franklin</article>
+                <p>Name: <span id="frankName"></span></p>
+                <p>Motto: <span id="frankMotto"></span></p>
+                <p>Year Founded: <span id="frankYear"></span></p>
+                <p>Current Population: <span id="frankPopulation"></span></p>
+                <p>Average Rainfall: <span id="frankRain"></span></p>
+
+
+            </div>
+            <div> <img src="images/rain.jpeg">
+                <article>Greenville</article>
+                <p>Name: <span id="greenName"></span></p>
+                <p>Motto: <span id="greenMotto"></span></p>
+                <p>Year Founded: <span id="greenYear"></span></p>
+                <p>Current Population: <span id="greenPopulation"></span></p>
+                <p>Average Rainfall: <span id="greenRain"></span></p>
+
+
+            </div>
+            <div> <img src="images/lightning.jpeg">
+                <article>Springfield</article>
+                <p>Name: <span id="springName"></span></p>
+                <p>Motto: <span id="springMotto"></span></p>
+                <p>Year Founded: <span id="springYear"></span></p>
+                <p>Current Population: <span id="springPopulation"></span></p>
+                <p>Average Rainfall: <span id="springRain"></span></p>
+            </div>
+
+        </div>
+
+
+    </body>
+</main>
+<footer>
+    <aside>
+        Contact us at 1800.233.7678
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Wacky Weather Watch | <span id="currentdate">  </span></p>
+</footer>
+
+<script src="scripts/towndata.js"></script>
+<script src="scripts/wayFinding.js"></script>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/currentdate.js"></script>
+
+</html>
