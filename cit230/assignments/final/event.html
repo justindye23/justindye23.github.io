@@ -24,10 +24,10 @@
 <body>
 
     <header>
-        <img src="images/logo2.png" alt="The site logo" width="200">
-        <p id="siteTitle">The Mountain Spoke</p>
-        <h1>Events</h1>
-        <div class="subheading">Watching out for your weather needs</div>
+
+        <p id="siteTitle">Events</p>
+        <h1> <img src="images/logo2.png" alt="The site logo" width="200"></h1>
+        <span id="currentdate">  </span>
     </header>
 
     <!-- site navigation use placeholder references -->
@@ -61,13 +61,13 @@
                     <label for="zipCode">Zip Code:</label>
                     <input type="number" name="zipCode" id="zipCode" required pattern="[0-9\-]{5,}" placeholder="5-digit zip">
                 </div>
+                <div>
+                    <label for="">Birth Date:</label>
+                    <input type="date">
+                </div>
             </fieldset>
             <fieldset>
                 <legend>Storm Information</legend>
-                <div>
-                    <label for="">Storm Date:</label>
-                    <input type="date">
-                </div>
                 <div>
                     <label for="">Storm Type</label>
                     <input list="type">
@@ -107,7 +107,7 @@
             </fieldset>
             <fieldset>
                 <div id="label">
-                    <label for="">Additonal Information or Comments: </label>
+                    <label for="">Special Accommodations/Comments: </label>
                     <textarea name="additionalInformation" id="additonalInformation" style="height: 150px" width="200px"></textarea>
                 </div>
             </fieldset>
@@ -125,7 +125,7 @@
         <aside>
             Contact us at 1800.233.7678
         </aside>
-        <p class="footer-bar">&copy;2018 All Rights Reserved | Wacky Weather Watch | <span id="currentdate">  </span></p>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | Making your adventures happen <span id="currentdate">  </span></p>
     </footer>
 
 

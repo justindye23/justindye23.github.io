@@ -10,6 +10,7 @@ body {
     font-size: 16px;
     /* Declare the base font-family - from google font api or other */
     font-family: 'Open Sans', sans-serif;
+    background-color: #F5F5DC;
 }
 
 
@@ -29,6 +30,8 @@ header h1 {
     justify-content: center;
 }
 
+
+
 header img {}
 
 header .subheading {
@@ -37,7 +40,7 @@ header .subheading {
     justify-content: flex-end;
     font-size: 14pt;
     font-weight: bold;
-    color: #700C3A;
+    color: #8B4C39;
 }
 
 #siteTitle {
@@ -63,7 +66,7 @@ nav ul li a {
 }
 
 nav ul li.active a {
-    background: linear-gradient(white 25%, #700C3A 100%);
+    background: linear-gradient(white 25%, #61B329 100%);
 }
 
 nav ul li a:hover {}
@@ -105,7 +108,7 @@ article p.town-article img {
 }
 
 footer {
-    background-color: #700C3A;
+    background-color: #8B4C39;
     color: white;
 }
 
