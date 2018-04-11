@@ -45,67 +45,32 @@
         <main>
             <h2>Contact Us</h2>
             <figure>
-                <img srcset="images/franklin-small.jpg 400w,
-                             images/franklin-medium.jpg 800w,
-                             images/franklin-large.jpg 1200w">
+                <img srcset= "images/spokeSmall.jpeg 400w,
+                             images/spokeMedium.jpeg 800w,
+                             images/spokeLarge.jpeg 1200w">
             </figure>
 
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.931627761109!2d-111.0929061845276!3d45.672272879103836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1523392702275" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <section>
-                <h3>Weather Summary</h3>
 
-                <div class="conditions">
-                    <p>Current Weather: <span id="springWeather"></span></p>
-                    <p>Current Temperature: <span id="springTemp"></span></p>
 
-                    <p>Wind Speed: <span id="springWind"></span></p>
-
-                    <p>Current Conditions: <img id="springIcon" src="" alt=""></p>
-                    <p>Forecast: <span id="springForecast"></span> </p>
-
-                </div>
-            </section>
-
-            <section class="forecast">
-                <h3>10 Day Forecast</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Day 1</th>
-                            <th>Day 2</th>
-                            <th>Day 3</th>
-                            <th>Day 4</th>
-                            <th>Day 5</th>
-                            <th>Day 6</th>
-                            <th>Day 7</th>
-                            <th>Day 8</th>
-                            <th>Day 9</th>
-                            <th>Day 10</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>89&deg;F</td>
-                            <td>87&deg;F</td>
-                            <td>78&deg;F</td>
-                            <td>75&deg;F</td>
-                            <td>72&deg;F</td>
-                            <td>72&deg;F</td>
-                            <td>79&deg;F</td>
-                            <td>83&deg;F</td>
-                            <td>85&deg;F</td>
-                            <td>89&deg;F</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
 
             <article>
-                <h3>Springfield Breaks Record</h3>
+                <h3>Contact Us!</h3>
                 <p class="town-article">
-                    <img src="images/cloudy.jpeg" alt="short article placeholder" width="200"> The amazing Brother Tim Thayne is coming to visit this week!
+                    <img src="images/contactUs.jpeg" alt="short article placeholder" width="200">
                 </p>
             </article>
+            <legend>Personal Information</legend>
+            <div>
+                <label for="">Full Name:</label>
+                <input type="text" name="fullname" title="Use only letters" autofocus required pattern="[A-Za-z\s]+[A-Za-z]" placeholder="Your full name">
+            </div>
+            <div> <label for="">Email:</label>
+                <input type="email" required placeholder="example@gmail.com"></div>
+            <div>
+                <label for="">Phone Number:</label>
+                <input type="number" required placeholder="Current phone number">
+            </div>
 
         </main>
 
@@ -116,7 +81,6 @@
             <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | Making your adventures happen <span id="currentdate">  </span></p>
         </footer>
 
-        <script src="scripts/wu-weatherS.js"></script>
         <script src="scripts/wayFinding.js"></script>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>

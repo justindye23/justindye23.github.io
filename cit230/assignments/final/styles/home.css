@@ -37,6 +37,7 @@ header .subheading {
 #siteTitle {
     color: #59A5D8;
     font-weight: bold;
+    font-size: 20pt;
 }
 nav {background-color: #59A5D8;
 
@@ -63,6 +64,11 @@ nav ul.hide {display: none;}
 }
 main {
     color: black;
+}
+
+article{ color: #61B329;
+    font-size: 18pt;
+
 }
 main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
