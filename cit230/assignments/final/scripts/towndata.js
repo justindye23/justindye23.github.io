@@ -7,6 +7,7 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 
+../data/services
 request.onload = function () {
     var towns = request.response;
 
