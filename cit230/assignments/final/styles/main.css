@@ -49,6 +49,11 @@ header .subheading {
     font-size: 20pt;
 }
 
+#currentdate{
+    display: flex;
+    float: right;
+}
+
 nav {
     background-color: #59A5D8;
 
