@@ -24,9 +24,9 @@
 
     <header>
 
-        <p id="siteTitle">Contact US</p>
-        <h1> <img src="images/logo2.png" alt="The site logo" width="200"></h1>
         <span id="currentdate">  </span>
+        <h1> <img src="images/logo2.png" alt="The site logo" width="350"></h1>
+        <p id="siteTitle">Contact Us</p>
     </header>
 
     <!-- site navigation use placeholder references -->
@@ -63,14 +63,12 @@
                     <label for="">Phone Number:</label>
                     <input type="number" required placeholder="Current phone number">
                 </div>
-                <div>
-                    <label for="zipCode">Zip Code:</label>
-                    <input type="number" name="zipCode" id="zipCode" required pattern="[0-9\-]{5,}" placeholder="5-digit zip">
+                <div id="label">
+                    <label for="">Comments: </label>
+                    <textarea name="additionalInformation" id="additonalInformation" style="height: 100px" width="300px"></textarea>
                 </div>
-                <div>
-                    <label for="">Birth Date:</label>
-                    <input type="date">
-                </div>
+
+
             </fieldset>
             <div>
                 <input type="submit">
