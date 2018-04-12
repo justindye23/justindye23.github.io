@@ -2,53 +2,80 @@
 <html lang="en-us">
 
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Contact Us</title>
-        <meta name="author" content="Your Name Here">
-        <meta name="description" content="page description placeholder">
-        <!-- external style references in the proper cascading order -->
-        <!-- Google API font reference -->
-        <link href="styles/normalize.css" rel="stylesheet">
-        <!-- normalize useragent/browser defaults -->
-        <link href="styles/main.css" rel="stylesheet">
-        <!-- default styles - small/phone views -->
-        <link href="styles/medium.css" rel="stylesheet">
-        <!-- medium/tablet views -->
-        <link href="styles/large.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <!-- large/wide/desktop views -->
-    </head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <meta name="author" content="Your Name Here">
+    <meta name="description" content="page description placeholder">
+    <!-- external style references in the proper cascading order -->
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
 
-    <body>
+<body>
 
-        <header>
+    <header>
 
-            <p id="siteTitle">Contact US</p>
-            <h1> <img src="images/logo2.png" alt="The site logo" width="200"></h1>
-            <span id="currentdate">  </span>
-        </header>
+        <p id="siteTitle">Contact US</p>
+        <h1> <img src="images/logo2.png" alt="The site logo" width="200"></h1>
+        <span id="currentdate">  </span>
+    </header>
 
-        <!-- site navigation use placeholder references -->
-        <nav class="clearfix">
-            <button onclick="toggleMenu()">&#9776;</button>
-            <ul id="mainmenu" class="hide">
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="adventureTours.html">Adventure Tours</a></li>
-                <li><a href="event.html">Events</a></li>
-                <li><a href="sales.html">Sales</a></li>
-                <li><a href="service.html">Service</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+    <!-- site navigation use placeholder references -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="mainmenu" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="adventureTours.html">Adventure Tours</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
 
-        <main>
-            <h2>Contact Us</h2>
-            <figure>
-                <img srcset= "images/spokeSmall.jpeg 400w,
+    <main>
+        <h2>Contact Us</h2>
+        <figure>
+            <img srcset="images/spokeSmall.jpeg 400w,
                              images/spokeMedium.jpeg 800w,
                              images/spokeLarge.jpeg 1200w">
-            </figure>
+        </figure>
+
+        <form action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="">Full Name:</label>
+                    <input type="text" name="fullname" title="Use only letters" autofocus required pattern="[A-Za-z\s]+[A-Za-z]" placeholder="Your full name">
+                </div>
+                <div> <label for="">Email:</label>
+                    <input type="email" required placeholder="example@gmail.com"></div>
+                <div>
+                    <label for="">Phone Number:</label>
+                    <input type="number" required placeholder="Current phone number">
+                </div>
+                <div>
+                    <label for="zipCode">Zip Code:</label>
+                    <input type="number" name="zipCode" id="zipCode" required pattern="[0-9\-]{5,}" placeholder="5-digit zip">
+                </div>
+                <div>
+                    <label for="">Birth Date:</label>
+                    <input type="date">
+                </div>
+            </fieldset>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
 
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.931627761109!2d-111.0929061845276!3d45.672272879103836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1523392702275" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
@@ -60,31 +87,21 @@
                     <img src="images/contactUs.jpeg" alt="short article placeholder" width="200">
                 </p>
             </article>
-            <legend>Personal Information</legend>
-            <div>
-                <label for="">Full Name:</label>
-                <input type="text" name="fullname" title="Use only letters" autofocus required pattern="[A-Za-z\s]+[A-Za-z]" placeholder="Your full name">
-            </div>
-            <div> <label for="">Email:</label>
-                <input type="email" required placeholder="example@gmail.com"></div>
-            <div>
-                <label for="">Phone Number:</label>
-                <input type="number" required placeholder="Current phone number">
-            </div>
 
-        </main>
 
-        <footer>
-            <aside>
-                Contact us at 1800.233.7678
-            </aside>
-            <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | Making your adventures happen <span id="currentdate">  </span></p>
-        </footer>
+    </main>
 
-        <script src="scripts/wayFinding.js"></script>
-        <script src="scripts/hamburger.js"></script>
-        <script src="scripts/currentdate.js"></script>
+    <footer>
+        <aside>
+            Contact us at 1800.233.7678
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | Making your adventures happen <span id="currentdate">  </span></p>
+    </footer>
 
-    </body>
+    <script src="scripts/wayFinding.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+
+</body>
 
 </html>

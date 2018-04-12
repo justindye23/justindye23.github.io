@@ -66,45 +66,7 @@
                     <input type="date">
                 </div>
             </fieldset>
-            <fieldset>
-                <legend>Storm Information</legend>
-                <div>
-                    <label for="">Storm Type</label>
-                    <input list="type">
-                    <datalist id="type">
-                   <option value="Flash Flood"></option>
-                   <option value="Hail"></option>
-                   <option value="Hurrricane"></option>
-                   <option value="Tornado"></option>
 
-
-                </datalist>
-
-                </div>
-                <div>
-                    <label for="rating">Storm Severity(1 to 10)</label>
-                    <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <span id="ratingvalue">5</span><br>
-                </div>
-                <div>
-                    <label for="">Storm Region</label>
-                    <select name="" id="">
-                        <option value="franklin">Franklin</option>
-                        <option value="greenville">Greenville</option>
-                        <option value="springfield">Springfield</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="">User in Danger Level-</label>
-                    <label for="">Yes</label>
-                    <input type="radio" name="danger" id="Yes">
-                    <label for="">Maybe</label>
-                    <input type="radio" name="danger" id="Maybe">
-                    <label for="">No</label>
-                    <input type="radio" name="danger" id="No">
-
-                </div>
-            </fieldset>
             <fieldset>
                 <div id="label">
                     <label for="">Special Accommodations/Comments: </label>
@@ -131,7 +93,6 @@
 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/wayFinding.js"></script>
-    <script src="scripts/stormsscale.js"></script>
     <script src="scripts/currentdate.js"></script>
 
 </body>

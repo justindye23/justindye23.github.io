@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sales</title>
 
-    <link href="styles/gallery.css" rel="stylesheet">
-    <link href="styles/gallery-medium.css" rel="stylesheet">
-    <link href="styles/gallery-large.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 </head>
 <header>
@@ -32,28 +36,45 @@
 <main>
 
     <body>
-        <div class="grid">
-            <div> <img src="images/bike.jpeg">
-                <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</span>
+
+
+            <div id="accordion">
+                <h3>Section 1</h3>
+                <div>
+                    <div class="grid">
+                        <div> <img src="images/bike.jpeg">
+                            <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</span>
+                        </div>
+                </div>
             </div>
-            <div> <img src="images/bike2.jpeg">
-                <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</span>
-            </div>
-            <div> <img src="images/bike3.jpeg">
-                <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</span>
+                <h3>Section 2</h3>
+                <div>
+                    <div> <img src="images/bike2.jpeg">
+                        <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</span>
+                    </div>
+                </div>
+                <h3>Section 3</h3>
+                <div>
+                    <div> <img src="images/bike3.jpeg">
+                        <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</span>
+                    </div>
+
+                </div>
+
             </div>
 
 
-        </div>
-        <script src=""></script>
+
+
     </body>
 </main>
-<footer>
-    <p class="footer-bar">Contact us at 1800.233.7678 | &copy;2018 All Rights Reserved | The Mountain Spoke | Making your adventures happen  <span id="currentdate">  </span></p>
-</footer>
+
+    <footer>
+        <p class="footer-bar">Contact us at 1800.233.7678 | &copy;2018 All Rights Reserved | The Mountain Spoke | Making your adventures happen  <span id="currentdate">  </span></p>
+    </footer>
 
 <script src="scripts/wayFinding.js"></script>
-<script src="scripts/windchill.js"></script>
+<script src="scripts/accordion.js"></script>
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/currentdate.js"></script>
 

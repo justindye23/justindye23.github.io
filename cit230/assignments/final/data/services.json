@@ -1,41 +1,21 @@
 {
-    "towns" : [
+    "services" : [
         {
-            "name": "Franklin",
-            "motto": "Where you will grow!",
-            "yearFounded": 1788,
-            "currentPopulation": 30458,
-            "averageRainfall": 21,
-            "events" : [
-                "March 4: March to the Drum of Donuts",
-                "September 5 - 11: Founder Days",
-                "December 1 - 26: Christmas in the Heart"
-            ]
+            "service": "Oil Chain",
+            "time": "1 hour",
+            "price": 20
         },
         {
-            "name": "Greenville",
-            "motto": "Green is our way of life.",
-            "yearFounded": 1805,
-            "currentPopulation": 33458,
-            "averageRainfall": 25,
-            "events" : [
-                "February 10-12: Greenbration",
-                "May 8 - 18: Greenville Founder Days",
-                "June 20: Verde and Valiant Day",
-                "November 15-16: Greensome Gathering"
-            ]
+            "service": "Fix Flat",
+            "time": "1/2 hour",
+            "price": 10
+
         },
 
         {
-            "name": "Placerton",
-            "motto": "Positive Placement in Placerton.",
-            "yearFounded": 1946,
-            "currentPopulation": 512,
-            "averageRainfall": 39,
-            "events" : [
-                "July 4: A Blaze of Glory",
-                "October 20: Fall through Fall"
-            ]
+            "service": "Fix Flat",
+            "time": "1/2 hour",
+            "price": 10
         },
 
         {
