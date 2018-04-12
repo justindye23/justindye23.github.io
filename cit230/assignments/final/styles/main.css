@@ -95,6 +95,11 @@ main figure {
     margin: 0 0 .2rem 2%;
     width: 96%;
 }
+#table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 main figure img {
     width: 100%;

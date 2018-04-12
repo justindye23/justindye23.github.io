@@ -7,7 +7,7 @@ td {
 table {
     font-family: 'Ubuntu', sans-serif;
     color: black;
-    font-size: 16px;
+    font-size: 20pt;
     text-align: center;
 }
 
@@ -18,7 +18,7 @@ table:hover {
 
 tbody {
     background-color: #e7f0ed;
-    font-size: 14px;
+    font-size: 16pt;
 }
 
 tbody tr:nth-child(even) td {
@@ -27,7 +27,7 @@ tbody tr:nth-child(even) td {
 
 tfoot {
     background-color: #7fb9c2;
-    font-size: 12px;
+    font-size: 12pt;
 }
 
 #tableTitle {
