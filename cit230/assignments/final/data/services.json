@@ -1,34 +1,23 @@
 {
     "services" : [
         {
-            "service": "Oil Chain",
-            "time": "1 hour",
+            "type": "Oil Chain",
+            "hours": "1 hour",
             "price": 20
         },
         {
-            "service": "Fix Flat",
-            "time": "1/2 hour",
+            "type": "Fix Flat",
+            "hours": "1/2 hour",
             "price": 10
 
         },
 
         {
-            "service": "Fix Flat",
-            "time": "1/2 hour",
+            "type": "Tighten Brakes",
+            "hours": "2 hours",
             "price": 10
-        },
-
-        {
-            "name": "Springfield",
-            "motto": "Where everyone is lifted.",
-            "yearFounded": 1826,
-            "currentPopulation": 17852,
-            "averageRainfall": 17,
-            "events" : [
-                "January 8: Spring into Winter",
-                "April 10-20: Celebration of Life",
-                "July 31-Aug 15: Dog Days of Summer Festival"
-            ]
         }
+
+
     ]
 }

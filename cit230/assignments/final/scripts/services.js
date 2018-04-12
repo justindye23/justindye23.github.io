@@ -1,56 +1,55 @@
 var header = document.querySelector('header');
 var section = document.querySelector('section');
-var requestURL = '../data/services.json';
+var requestURL = '../final/data/services.json';
 
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 
-..assignments/final/data/services
 request.onload = function () {
     var services = request.response;
 
 
-    var services = services.services[0];
+    var service = services.services[0];
 
 
-    var services  = services.service;
-    document.getElementById("frankName").innerHTML = service;
+    var type  = service.type;
+    document.getElementById("chain").innerHTML = type;
 
-    var hours  = services.hours;
-    document.getElementById("frankMotto").innerHTML = hours;
+    var hours  = service.hours;
+    document.getElementById("chainTime").innerHTML = hours;
 
-    var price = services.price;
-    document.getElementById("frankYear").innerHTML = price;
-
-
-
-
-
-    var services = services.services[1];
-
-    var services  = services.service;
-    document.getElementById("frankName").innerHTML = service;
-
-    var hours  = services.hours;
-    document.getElementById("frankMotto").innerHTML = hours;
-
-    var price = services.price;
-    document.getElementById("frankYear").innerHTML = price;
+    var price = service.price;
+    document.getElementById("chainPrice").innerHTML = price;
 
 
 
-    var services = services.services[2];
 
-    var services  = services.service;
-    document.getElementById("frankName").innerHTML = service;
 
-    var hours  = services.hours;
-    document.getElementById("frankMotto").innerHTML = hours;
+    service = services.services[1];
 
-    var price = services.price;
-    document.getElementById("frankYear").innerHTML = price;
+     type  = service.type;
+    document.getElementById("flat").innerHTML = type;
+
+ hours  = service.hours;
+    document.getElementById("flatTime").innerHTML = hours;
+
+    price = service.price;
+    document.getElementById("flatPrice").innerHTML = price;
+
+
+
+    service = services.services[2];
+
+    type  = service.type;
+    document.getElementById("brakes").innerHTML = type;
+
+    hours  = service.hours;
+    document.getElementById("brakeTime").innerHTML = hours;
+
+    price = service.price;
+    document.getElementById("brakePrice").innerHTML = price;
 
 
 
