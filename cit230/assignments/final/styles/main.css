@@ -87,12 +87,7 @@ nav ul.hide {
     clear: both;
 }
 
-#tours{
-    display: inline-grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 20px;
-}
+
 main {}
 
 main h2 {}
@@ -121,12 +116,7 @@ section.forecast {
     display: none;
 }
 
-article p.town-article img {
-    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 100%;
-    /* fill the page in the small/phone view */
-    margin: 0 0 .2rem 2%;
-}
+
 
 footer {
     background-color: #8B4C39;
