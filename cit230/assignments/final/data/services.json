@@ -3,19 +3,19 @@
         {
             "type": "Oil Chain",
             "hours": "1 hour",
-            "price": 20
+            "price": "$20"
         },
         {
             "type": "Fix Flat",
             "hours": "1/2 hour",
-            "price": 10
+            "price": "$10"
 
         },
 
         {
             "type": "Tighten Brakes",
             "hours": "2 hours",
-            "price": 10
+            "price": "$10"
         }
 
 
