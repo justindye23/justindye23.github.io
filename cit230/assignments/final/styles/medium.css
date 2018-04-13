@@ -24,6 +24,13 @@
         padding: .6rem 1rem;
     }
 
+    #tours{
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
     main figure {
         width: 62.666%;
     }
@@ -31,9 +38,6 @@
         display: block;
     }
     /* show the 10-day forecast with the medium view and up */
-    article p.town-article img {
-        width: 62.666%;
-        display: flex;
-    }
+
     /* responsive images */
 }
